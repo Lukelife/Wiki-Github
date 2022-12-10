@@ -35,6 +35,7 @@ function App() {
 
   const handleRemoveRepo = (id) => {
     console.log('Removendo registro', id);
+  
 
     // utilizar filter.
   }
@@ -48,6 +49,7 @@ function App() {
       {repos.map(repo => <ItemRepo handleRemoveRepo={handleRemoveRepo} repo={repo}/>)}
     </Container>
   );
+
 }
 
 export default App;
